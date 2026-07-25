@@ -12,14 +12,22 @@ pub struct Cli {
 #[derive(Subcommand, Debug)]
 pub enum Commands {
     #[command(visible_alias = "i")]
-    Install { packages: Vec<String> },
+    Install {
+        packages: Vec<String>,
+    },
 
     #[command(visible_alias = "rm")]
-    Remove { packages: Vec<String> },
+    Remove {
+        packages: Vec<String>,
+    },
 
-    Search { query: String },
+    Search {
+        query: String,
+    },
 
     Update,
 
-    Upgrade { packages: Vec<String> }
+    Upgrade {
+        packages: Vec<String>,
+    },
 }
