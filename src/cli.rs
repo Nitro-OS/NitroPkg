@@ -21,5 +21,5 @@ pub enum Commands {
 
     Update,
 
-    Upgrade
+    Upgrade { packages: Vec<String> }
 }
