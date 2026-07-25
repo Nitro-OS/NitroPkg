@@ -21,6 +21,7 @@ pub enum Commands {
         packages: Vec<String>,
     },
 
+    #[command(visible_alias = "s")]
     Search {
         query: String,
     },
