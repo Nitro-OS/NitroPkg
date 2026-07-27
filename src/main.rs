@@ -29,6 +29,10 @@ fn main() -> Result<()> {
         Commands::Upgrade { packages } => {
             commands::upgrade::execute(packages)?;
         }
+
+        Commands::Clean => {
+            commands::clean::execute()?;
+        }
     }
 
     Ok(())
