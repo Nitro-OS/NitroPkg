@@ -31,4 +31,6 @@ pub enum Commands {
     Upgrade {
         packages: Vec<String>,
     },
+
+    Clean
 }
