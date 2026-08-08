@@ -33,6 +33,10 @@ fn main() -> Result<()> {
         Commands::Clean => {
             commands::clean::execute()?;
         }
+
+        Commands::List => {
+            commands::list::execute()?;
+        }
     }
 
     Ok(())

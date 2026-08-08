@@ -32,5 +32,7 @@ pub enum Commands {
         packages: Vec<String>,
     },
 
-    Clean
+    Clean,
+
+    List,
 }
