@@ -26,13 +26,17 @@ pub enum Commands {
         query: String,
     },
 
+    #[command(visible_alias = "upd")]
     Update,
 
+    #[command(visible_alias = "upg")]
     Upgrade {
         packages: Vec<String>,
     },
 
+    #[command(visible_alias = "cls")]
     Clean,
 
+    #[command(visible_alias = "ls")]
     List,
 }
