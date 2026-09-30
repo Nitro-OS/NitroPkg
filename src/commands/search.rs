@@ -11,9 +11,9 @@ pub fn execute(query: String) -> Result<()> {
     let status = Command::new("pacman").arg("-Ss").arg(&query).status()?;
 
     if status.success() {
-        println!("Installation completed.");
+        println!("Process completed.");
         Ok(())
     } else {
-        bail!("pacman exited with status: {}", status);
+        bail!("Package '{}' not found", query);
     }
 }
