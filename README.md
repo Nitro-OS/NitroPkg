@@ -36,9 +36,9 @@ npk <COMMAND>
 | `install` | `i` | Install one or more packages |
 | `remove` | `rm` | Remove installed packages |
 | `search` | `s` | Search for packages |
-| `update` | — | Synchronize package databases |
-| `upgrade` | — | Upgrade all installed packages |
-| `clean` | — | Remove unused package cache |
+| `update` | `upd` | Synchronize package databases |
+| `upgrade` | `upg` | Upgrade all installed packages |
+| `clean` | `cls` | Remove unused package cache |
 | `help` | — | Display help information |
 
 ## Examples
